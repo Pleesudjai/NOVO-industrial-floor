@@ -1,5 +1,7 @@
 # NOVO Industrial Floor, Digital Twin
 
+**Live demo:** https://cheerful-cendol-59d55f.netlify.app/
+
 Interactive digital twin of a Primekss PrimX steel-fibre-reinforced concrete
 industrial floor test panel, built for the NOVO distributed fibre optic sensing
 campaign run by the Mobasher group at ASU.
