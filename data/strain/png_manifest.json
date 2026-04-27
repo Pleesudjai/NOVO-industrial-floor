@@ -1,0 +1,835 @@
+{
+  "generated_utc": "2026-04-27T01:51:26.201Z",
+  "description": "Phase 1b — route_id × load_stage → PNG (existing MATLAB plot output) for the localhost viewer popup.",
+  "notes": "Transverse fibres have one PNG per route. Longitudinal fibres share a single Concatenated_Bottom_vs_Top PNG across both routes (no per-route plot exists yet).",
+  "routes": {
+    "F1_R1": {
+      "LS1_East": {
+        "batch": "B1",
+        "orientation": "transverse",
+        "fibre_folder": "F1_2",
+        "png_file": "Figure_8_Group_1_East_Side_F1_2.png",
+        "png_url": "/data/png_plots/batch%201%20-%20Tranverse/01%20Plots/F1_2/Figure_8_Group_1_East_Side_F1_2.png",
+        "scope": "route_only"
+      },
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F1_2",
+        "png_file": "Figure_8_Group_1_East_Side_F1_2.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F1_2/Figure_8_Group_1_East_Side_F1_2.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F1_2",
+        "png_file": "Figure_8_Group_1_East_Side_F1_2.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F1_2/Figure_8_Group_1_East_Side_F1_2.png",
+        "scope": "route_only"
+      }
+    },
+    "F1_R2": {
+      "LS1_East": {
+        "batch": "B1",
+        "orientation": "transverse",
+        "fibre_folder": "F1_2",
+        "png_file": "Figure_9_Group_2_Middle_F1_2.png",
+        "png_url": "/data/png_plots/batch%201%20-%20Tranverse/01%20Plots/F1_2/Figure_9_Group_2_Middle_F1_2.png",
+        "scope": "route_only"
+      },
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F1_2",
+        "png_file": "Figure_9_Group_2_Middle_F1_2.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F1_2/Figure_9_Group_2_Middle_F1_2.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F1_2",
+        "png_file": "Figure_9_Group_2_Middle_F1_2.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F1_2/Figure_9_Group_2_Middle_F1_2.png",
+        "scope": "route_only"
+      }
+    },
+    "F1_R3": {
+      "LS1_East": {
+        "batch": "B1",
+        "orientation": "transverse",
+        "fibre_folder": "F1_2",
+        "png_file": "Figure_10_Group_3_West_Side_F1_2.png",
+        "png_url": "/data/png_plots/batch%201%20-%20Tranverse/01%20Plots/F1_2/Figure_10_Group_3_West_Side_F1_2.png",
+        "scope": "route_only"
+      },
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F1_2",
+        "png_file": "Figure_10_Group_3_West_Side_F1_2.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F1_2/Figure_10_Group_3_West_Side_F1_2.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F1_2",
+        "png_file": "Figure_10_Group_3_West_Side_F1_2.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F1_2/Figure_10_Group_3_West_Side_F1_2.png",
+        "scope": "route_only"
+      }
+    },
+    "F2_R1": {
+      "LS1_East": {
+        "batch": "B1",
+        "orientation": "transverse",
+        "fibre_folder": "F2_2",
+        "png_file": "Figure_8_Group_1_East_Side_F2_2.png",
+        "png_url": "/data/png_plots/batch%201%20-%20Tranverse/01%20Plots/F2_2/Figure_8_Group_1_East_Side_F2_2.png",
+        "scope": "route_only"
+      },
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F2_2",
+        "png_file": "Figure_8_Group_1_East_Side_F2_2.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F2_2/Figure_8_Group_1_East_Side_F2_2.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F2_2",
+        "png_file": "Figure_8_Group_1_East_Side_F2_2.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F2_2/Figure_8_Group_1_East_Side_F2_2.png",
+        "scope": "route_only"
+      }
+    },
+    "F2_R2": {
+      "LS1_East": {
+        "batch": "B1",
+        "orientation": "transverse",
+        "fibre_folder": "F2_2",
+        "png_file": "Figure_9_Group_2_Middle_F2_2.png",
+        "png_url": "/data/png_plots/batch%201%20-%20Tranverse/01%20Plots/F2_2/Figure_9_Group_2_Middle_F2_2.png",
+        "scope": "route_only"
+      },
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F2_2",
+        "png_file": "Figure_9_Group_2_Middle_F2_2.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F2_2/Figure_9_Group_2_Middle_F2_2.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F2_2",
+        "png_file": "Figure_9_Group_2_Middle_F2_2.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F2_2/Figure_9_Group_2_Middle_F2_2.png",
+        "scope": "route_only"
+      }
+    },
+    "F2_R3": {
+      "LS1_East": {
+        "batch": "B1",
+        "orientation": "transverse",
+        "fibre_folder": "F2_2",
+        "png_file": "Figure_10_Group_3_West_Side_F2_2.png",
+        "png_url": "/data/png_plots/batch%201%20-%20Tranverse/01%20Plots/F2_2/Figure_10_Group_3_West_Side_F2_2.png",
+        "scope": "route_only"
+      },
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F2_2",
+        "png_file": "Figure_10_Group_3_West_Side_F2_2.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F2_2/Figure_10_Group_3_West_Side_F2_2.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F2_2",
+        "png_file": "Figure_10_Group_3_West_Side_F2_2.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F2_2/Figure_10_Group_3_West_Side_F2_2.png",
+        "scope": "route_only"
+      }
+    },
+    "F10_R1": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F10_1",
+        "png_file": "Figure_8_Group_1_East_Side_F10_1.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F10_1/Figure_8_Group_1_East_Side_F10_1.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F10_1",
+        "png_file": "Figure_8_Group_1_East_Side_F10_1.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F10_1/Figure_8_Group_1_East_Side_F10_1.png",
+        "scope": "route_only"
+      }
+    },
+    "F10_R2": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F10_1",
+        "png_file": "Figure_9_Group_2_Middle_F10_1.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F10_1/Figure_9_Group_2_Middle_F10_1.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F10_1",
+        "png_file": "Figure_9_Group_2_Middle_F10_1.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F10_1/Figure_9_Group_2_Middle_F10_1.png",
+        "scope": "route_only"
+      }
+    },
+    "F10_R3": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F10_1",
+        "png_file": "Figure_10_Group_3_West_Side_F10_1.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F10_1/Figure_10_Group_3_West_Side_F10_1.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F10_1",
+        "png_file": "Figure_10_Group_3_West_Side_F10_1.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F10_1/Figure_10_Group_3_West_Side_F10_1.png",
+        "scope": "route_only"
+      }
+    },
+    "F3_R1": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F3_2",
+        "png_file": "Figure_8_Group_1_East_Side_F3_2.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F3_2/Figure_8_Group_1_East_Side_F3_2.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F3_2",
+        "png_file": "Figure_8_Group_1_East_Side_F3_2.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F3_2/Figure_8_Group_1_East_Side_F3_2.png",
+        "scope": "route_only"
+      }
+    },
+    "F3_R2": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F3_2",
+        "png_file": "Figure_9_Group_2_Middle_F3_2.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F3_2/Figure_9_Group_2_Middle_F3_2.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F3_2",
+        "png_file": "Figure_9_Group_2_Middle_F3_2.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F3_2/Figure_9_Group_2_Middle_F3_2.png",
+        "scope": "route_only"
+      }
+    },
+    "F3_R3": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F3_2",
+        "png_file": "Figure_10_Group_3_West_Side_F3_2.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F3_2/Figure_10_Group_3_West_Side_F3_2.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F3_2",
+        "png_file": "Figure_10_Group_3_West_Side_F3_2.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F3_2/Figure_10_Group_3_West_Side_F3_2.png",
+        "scope": "route_only"
+      }
+    },
+    "F4_R1": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F4_1",
+        "png_file": "Figure_8_Group_1_East_Side_F4_1.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F4_1/Figure_8_Group_1_East_Side_F4_1.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F4_1",
+        "png_file": "Figure_8_Group_1_East_Side_F4_1.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F4_1/Figure_8_Group_1_East_Side_F4_1.png",
+        "scope": "route_only"
+      }
+    },
+    "F4_R2": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F4_1",
+        "png_file": "Figure_9_Group_2_Middle_F4_1.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F4_1/Figure_9_Group_2_Middle_F4_1.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F4_1",
+        "png_file": "Figure_9_Group_2_Middle_F4_1.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F4_1/Figure_9_Group_2_Middle_F4_1.png",
+        "scope": "route_only"
+      }
+    },
+    "F4_R3": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F4_1",
+        "png_file": "Figure_10_Group_3_West_Side_F4_1.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F4_1/Figure_10_Group_3_West_Side_F4_1.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F4_1",
+        "png_file": "Figure_10_Group_3_West_Side_F4_1.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F4_1/Figure_10_Group_3_West_Side_F4_1.png",
+        "scope": "route_only"
+      }
+    },
+    "F5_R1": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F5_2",
+        "png_file": "Figure_8_Group_1_East_Side_F5_2.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F5_2/Figure_8_Group_1_East_Side_F5_2.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F5_2",
+        "png_file": "Figure_8_Group_1_East_Side_F5_2.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F5_2/Figure_8_Group_1_East_Side_F5_2.png",
+        "scope": "route_only"
+      }
+    },
+    "F5_R2": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F5_2",
+        "png_file": "Figure_9_Group_2_Middle_F5_2.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F5_2/Figure_9_Group_2_Middle_F5_2.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F5_2",
+        "png_file": "Figure_9_Group_2_Middle_F5_2.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F5_2/Figure_9_Group_2_Middle_F5_2.png",
+        "scope": "route_only"
+      }
+    },
+    "F5_R3": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F5_2",
+        "png_file": "Figure_10_Group_3_West_Side_F5_2.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F5_2/Figure_10_Group_3_West_Side_F5_2.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F5_2",
+        "png_file": "Figure_10_Group_3_West_Side_F5_2.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F5_2/Figure_10_Group_3_West_Side_F5_2.png",
+        "scope": "route_only"
+      }
+    },
+    "F7_R1": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F7_1",
+        "png_file": "Figure_8_Group_1_East_Side_F7_1.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F7_1/Figure_8_Group_1_East_Side_F7_1.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F7_1",
+        "png_file": "Figure_8_Group_1_East_Side_F7_1.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F7_1/Figure_8_Group_1_East_Side_F7_1.png",
+        "scope": "route_only"
+      }
+    },
+    "F7_R2": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F7_1",
+        "png_file": "Figure_9_Group_2_Middle_F7_1.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F7_1/Figure_9_Group_2_Middle_F7_1.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F7_1",
+        "png_file": "Figure_9_Group_2_Middle_F7_1.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F7_1/Figure_9_Group_2_Middle_F7_1.png",
+        "scope": "route_only"
+      }
+    },
+    "F7_R3": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F7_1",
+        "png_file": "Figure_10_Group_3_West_Side_F7_1.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F7_1/Figure_10_Group_3_West_Side_F7_1.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F7_1",
+        "png_file": "Figure_10_Group_3_West_Side_F7_1.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F7_1/Figure_10_Group_3_West_Side_F7_1.png",
+        "scope": "route_only"
+      }
+    },
+    "F8_R1": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F8_1",
+        "png_file": "Figure_8_Group_1_East_Side_F8_1.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F8_1/Figure_8_Group_1_East_Side_F8_1.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F8_1",
+        "png_file": "Figure_8_Group_1_East_Side_F8_1.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F8_1/Figure_8_Group_1_East_Side_F8_1.png",
+        "scope": "route_only"
+      }
+    },
+    "F8_R2": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F8_1",
+        "png_file": "Figure_9_Group_2_Middle_F8_1.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F8_1/Figure_9_Group_2_Middle_F8_1.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F8_1",
+        "png_file": "Figure_9_Group_2_Middle_F8_1.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F8_1/Figure_9_Group_2_Middle_F8_1.png",
+        "scope": "route_only"
+      }
+    },
+    "F8_R3": {
+      "LS2_West": {
+        "batch": "B2",
+        "orientation": "transverse",
+        "fibre_folder": "F8_1",
+        "png_file": "Figure_10_Group_3_West_Side_F8_1.png",
+        "png_url": "/data/png_plots/batch%202%20-%20Tranverse/01%20Plots/F8_1/Figure_10_Group_3_West_Side_F8_1.png",
+        "scope": "route_only"
+      },
+      "LS3_Middle": {
+        "batch": "B3",
+        "orientation": "transverse",
+        "fibre_folder": "F8_1",
+        "png_file": "Figure_10_Group_3_West_Side_F8_1.png",
+        "png_url": "/data/png_plots/batch%203%20-%20Tranverse/01%20Plots/F8_1/Figure_10_Group_3_West_Side_F8_1.png",
+        "scope": "route_only"
+      }
+    },
+    "F11_R1": {
+      "LS1_East": {
+        "batch": "B4",
+        "orientation": "longitudinal",
+        "fibre_folder": "F11_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F11_1.png",
+        "png_url": "/data/png_plots/batch%204%20-%20Logitudinal/01%20Plots/F11_1/Concatenated_Bottom_vs_Top_-_F11_1.png",
+        "scope": "whole_fibre"
+      },
+      "LS2_West": {
+        "batch": "B5",
+        "orientation": "longitudinal",
+        "fibre_folder": "F11_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F11_1.png",
+        "png_url": "/data/png_plots/batch%205%20-%20Logitudinal/01%20Plots/F11_1/Concatenated_Bottom_vs_Top_-_F11_1.png",
+        "scope": "whole_fibre"
+      },
+      "LS3_Middle": {
+        "batch": "B6",
+        "orientation": "longitudinal",
+        "fibre_folder": "F11_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F11_1.png",
+        "png_url": "/data/png_plots/batch%206%20-%20Logitudinal/01%20Plots/F11_1/Concatenated_Bottom_vs_Top_-_F11_1.png",
+        "scope": "whole_fibre"
+      }
+    },
+    "F11_R2": {
+      "LS1_East": {
+        "batch": "B4",
+        "orientation": "longitudinal",
+        "fibre_folder": "F11_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F11_1.png",
+        "png_url": "/data/png_plots/batch%204%20-%20Logitudinal/01%20Plots/F11_1/Concatenated_Bottom_vs_Top_-_F11_1.png",
+        "scope": "whole_fibre"
+      },
+      "LS2_West": {
+        "batch": "B5",
+        "orientation": "longitudinal",
+        "fibre_folder": "F11_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F11_1.png",
+        "png_url": "/data/png_plots/batch%205%20-%20Logitudinal/01%20Plots/F11_1/Concatenated_Bottom_vs_Top_-_F11_1.png",
+        "scope": "whole_fibre"
+      },
+      "LS3_Middle": {
+        "batch": "B6",
+        "orientation": "longitudinal",
+        "fibre_folder": "F11_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F11_1.png",
+        "png_url": "/data/png_plots/batch%206%20-%20Logitudinal/01%20Plots/F11_1/Concatenated_Bottom_vs_Top_-_F11_1.png",
+        "scope": "whole_fibre"
+      }
+    },
+    "F12_R1": {
+      "LS1_East": {
+        "batch": "B4",
+        "orientation": "longitudinal",
+        "fibre_folder": "F12_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F12_2.png",
+        "png_url": "/data/png_plots/batch%204%20-%20Logitudinal/01%20Plots/F12_2/Concatenated_Bottom_vs_Top_-_F12_2.png",
+        "scope": "whole_fibre"
+      },
+      "LS2_West": {
+        "batch": "B5",
+        "orientation": "longitudinal",
+        "fibre_folder": "F12_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F12_2.png",
+        "png_url": "/data/png_plots/batch%205%20-%20Logitudinal/01%20Plots/F12_2/Concatenated_Bottom_vs_Top_-_F12_2.png",
+        "scope": "whole_fibre"
+      },
+      "LS3_Middle": {
+        "batch": "B6",
+        "orientation": "longitudinal",
+        "fibre_folder": "F12_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F12_2.png",
+        "png_url": "/data/png_plots/batch%206%20-%20Logitudinal/01%20Plots/F12_2/Concatenated_Bottom_vs_Top_-_F12_2.png",
+        "scope": "whole_fibre"
+      }
+    },
+    "F12_R2": {
+      "LS1_East": {
+        "batch": "B4",
+        "orientation": "longitudinal",
+        "fibre_folder": "F12_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F12_2.png",
+        "png_url": "/data/png_plots/batch%204%20-%20Logitudinal/01%20Plots/F12_2/Concatenated_Bottom_vs_Top_-_F12_2.png",
+        "scope": "whole_fibre"
+      },
+      "LS2_West": {
+        "batch": "B5",
+        "orientation": "longitudinal",
+        "fibre_folder": "F12_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F12_2.png",
+        "png_url": "/data/png_plots/batch%205%20-%20Logitudinal/01%20Plots/F12_2/Concatenated_Bottom_vs_Top_-_F12_2.png",
+        "scope": "whole_fibre"
+      },
+      "LS3_Middle": {
+        "batch": "B6",
+        "orientation": "longitudinal",
+        "fibre_folder": "F12_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F12_2.png",
+        "png_url": "/data/png_plots/batch%206%20-%20Logitudinal/01%20Plots/F12_2/Concatenated_Bottom_vs_Top_-_F12_2.png",
+        "scope": "whole_fibre"
+      }
+    },
+    "F13_R1": {
+      "LS1_East": {
+        "batch": "B4",
+        "orientation": "longitudinal",
+        "fibre_folder": "F13_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F13_2.png",
+        "png_url": "/data/png_plots/batch%204%20-%20Logitudinal/01%20Plots/F13_2/Concatenated_Bottom_vs_Top_-_F13_2.png",
+        "scope": "whole_fibre"
+      },
+      "LS2_West": {
+        "batch": "B5",
+        "orientation": "longitudinal",
+        "fibre_folder": "F13_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F13_2.png",
+        "png_url": "/data/png_plots/batch%205%20-%20Logitudinal/01%20Plots/F13_2/Concatenated_Bottom_vs_Top_-_F13_2.png",
+        "scope": "whole_fibre"
+      }
+    },
+    "F13_R2": {
+      "LS1_East": {
+        "batch": "B4",
+        "orientation": "longitudinal",
+        "fibre_folder": "F13_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F13_2.png",
+        "png_url": "/data/png_plots/batch%204%20-%20Logitudinal/01%20Plots/F13_2/Concatenated_Bottom_vs_Top_-_F13_2.png",
+        "scope": "whole_fibre"
+      },
+      "LS2_West": {
+        "batch": "B5",
+        "orientation": "longitudinal",
+        "fibre_folder": "F13_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F13_2.png",
+        "png_url": "/data/png_plots/batch%205%20-%20Logitudinal/01%20Plots/F13_2/Concatenated_Bottom_vs_Top_-_F13_2.png",
+        "scope": "whole_fibre"
+      }
+    },
+    "F14_R1": {
+      "LS1_East": {
+        "batch": "B4",
+        "orientation": "longitudinal",
+        "fibre_folder": "F14_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F14_1.png",
+        "png_url": "/data/png_plots/batch%204%20-%20Logitudinal/01%20Plots/F14_1/Concatenated_Bottom_vs_Top_-_F14_1.png",
+        "scope": "whole_fibre"
+      },
+      "LS2_West": {
+        "batch": "B5",
+        "orientation": "longitudinal",
+        "fibre_folder": "F14_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F14_1.png",
+        "png_url": "/data/png_plots/batch%205%20-%20Logitudinal/01%20Plots/F14_1/Concatenated_Bottom_vs_Top_-_F14_1.png",
+        "scope": "whole_fibre"
+      },
+      "LS3_Middle": {
+        "batch": "B6",
+        "orientation": "longitudinal",
+        "fibre_folder": "F14_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F14_2.png",
+        "png_url": "/data/png_plots/batch%206%20-%20Logitudinal/01%20Plots/F14_2/Concatenated_Bottom_vs_Top_-_F14_2.png",
+        "scope": "whole_fibre"
+      }
+    },
+    "F14_R2": {
+      "LS1_East": {
+        "batch": "B4",
+        "orientation": "longitudinal",
+        "fibre_folder": "F14_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F14_1.png",
+        "png_url": "/data/png_plots/batch%204%20-%20Logitudinal/01%20Plots/F14_1/Concatenated_Bottom_vs_Top_-_F14_1.png",
+        "scope": "whole_fibre"
+      },
+      "LS2_West": {
+        "batch": "B5",
+        "orientation": "longitudinal",
+        "fibre_folder": "F14_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F14_1.png",
+        "png_url": "/data/png_plots/batch%205%20-%20Logitudinal/01%20Plots/F14_1/Concatenated_Bottom_vs_Top_-_F14_1.png",
+        "scope": "whole_fibre"
+      },
+      "LS3_Middle": {
+        "batch": "B6",
+        "orientation": "longitudinal",
+        "fibre_folder": "F14_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F14_2.png",
+        "png_url": "/data/png_plots/batch%206%20-%20Logitudinal/01%20Plots/F14_2/Concatenated_Bottom_vs_Top_-_F14_2.png",
+        "scope": "whole_fibre"
+      }
+    },
+    "F16_R1": {
+      "LS1_East": {
+        "batch": "B4",
+        "orientation": "longitudinal",
+        "fibre_folder": "F16_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F16_1.png",
+        "png_url": "/data/png_plots/batch%204%20-%20Logitudinal/01%20Plots/F16_1/Concatenated_Bottom_vs_Top_-_F16_1.png",
+        "scope": "whole_fibre"
+      },
+      "LS2_West": {
+        "batch": "B5",
+        "orientation": "longitudinal",
+        "fibre_folder": "F16_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F16_1.png",
+        "png_url": "/data/png_plots/batch%205%20-%20Logitudinal/01%20Plots/F16_1/Concatenated_Bottom_vs_Top_-_F16_1.png",
+        "scope": "whole_fibre"
+      },
+      "LS3_Middle": {
+        "batch": "B6",
+        "orientation": "longitudinal",
+        "fibre_folder": "F16_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F16_1.png",
+        "png_url": "/data/png_plots/batch%206%20-%20Logitudinal/01%20Plots/F16_1/Concatenated_Bottom_vs_Top_-_F16_1.png",
+        "scope": "whole_fibre"
+      }
+    },
+    "F16_R2": {
+      "LS1_East": {
+        "batch": "B4",
+        "orientation": "longitudinal",
+        "fibre_folder": "F16_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F16_1.png",
+        "png_url": "/data/png_plots/batch%204%20-%20Logitudinal/01%20Plots/F16_1/Concatenated_Bottom_vs_Top_-_F16_1.png",
+        "scope": "whole_fibre"
+      },
+      "LS2_West": {
+        "batch": "B5",
+        "orientation": "longitudinal",
+        "fibre_folder": "F16_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F16_1.png",
+        "png_url": "/data/png_plots/batch%205%20-%20Logitudinal/01%20Plots/F16_1/Concatenated_Bottom_vs_Top_-_F16_1.png",
+        "scope": "whole_fibre"
+      },
+      "LS3_Middle": {
+        "batch": "B6",
+        "orientation": "longitudinal",
+        "fibre_folder": "F16_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F16_1.png",
+        "png_url": "/data/png_plots/batch%206%20-%20Logitudinal/01%20Plots/F16_1/Concatenated_Bottom_vs_Top_-_F16_1.png",
+        "scope": "whole_fibre"
+      }
+    },
+    "F18_R1": {
+      "LS1_East": {
+        "batch": "B4",
+        "orientation": "longitudinal",
+        "fibre_folder": "F18_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F18_1.png",
+        "png_url": "/data/png_plots/batch%204%20-%20Logitudinal/01%20Plots/F18_1/Concatenated_Bottom_vs_Top_-_F18_1.png",
+        "scope": "whole_fibre"
+      },
+      "LS2_West": {
+        "batch": "B5",
+        "orientation": "longitudinal",
+        "fibre_folder": "F18_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F18_1.png",
+        "png_url": "/data/png_plots/batch%205%20-%20Logitudinal/01%20Plots/F18_1/Concatenated_Bottom_vs_Top_-_F18_1.png",
+        "scope": "whole_fibre"
+      },
+      "LS3_Middle": {
+        "batch": "B6",
+        "orientation": "longitudinal",
+        "fibre_folder": "F18_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F18_1.png",
+        "png_url": "/data/png_plots/batch%206%20-%20Logitudinal/01%20Plots/F18_1/Concatenated_Bottom_vs_Top_-_F18_1.png",
+        "scope": "whole_fibre"
+      }
+    },
+    "F18_R2": {
+      "LS1_East": {
+        "batch": "B4",
+        "orientation": "longitudinal",
+        "fibre_folder": "F18_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F18_1.png",
+        "png_url": "/data/png_plots/batch%204%20-%20Logitudinal/01%20Plots/F18_1/Concatenated_Bottom_vs_Top_-_F18_1.png",
+        "scope": "whole_fibre"
+      },
+      "LS2_West": {
+        "batch": "B5",
+        "orientation": "longitudinal",
+        "fibre_folder": "F18_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F18_1.png",
+        "png_url": "/data/png_plots/batch%205%20-%20Logitudinal/01%20Plots/F18_1/Concatenated_Bottom_vs_Top_-_F18_1.png",
+        "scope": "whole_fibre"
+      },
+      "LS3_Middle": {
+        "batch": "B6",
+        "orientation": "longitudinal",
+        "fibre_folder": "F18_1",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F18_1.png",
+        "png_url": "/data/png_plots/batch%206%20-%20Logitudinal/01%20Plots/F18_1/Concatenated_Bottom_vs_Top_-_F18_1.png",
+        "scope": "whole_fibre"
+      }
+    },
+    "F19_R1": {
+      "LS1_East": {
+        "batch": "B4",
+        "orientation": "longitudinal",
+        "fibre_folder": "F19_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F19_2.png",
+        "png_url": "/data/png_plots/batch%204%20-%20Logitudinal/01%20Plots/F19_2/Concatenated_Bottom_vs_Top_-_F19_2.png",
+        "scope": "whole_fibre"
+      },
+      "LS2_West": {
+        "batch": "B5",
+        "orientation": "longitudinal",
+        "fibre_folder": "F19_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F19_2.png",
+        "png_url": "/data/png_plots/batch%205%20-%20Logitudinal/01%20Plots/F19_2/Concatenated_Bottom_vs_Top_-_F19_2.png",
+        "scope": "whole_fibre"
+      },
+      "LS3_Middle": {
+        "batch": "B6",
+        "orientation": "longitudinal",
+        "fibre_folder": "F19_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F19_2.png",
+        "png_url": "/data/png_plots/batch%206%20-%20Logitudinal/01%20Plots/F19_2/Concatenated_Bottom_vs_Top_-_F19_2.png",
+        "scope": "whole_fibre"
+      }
+    },
+    "F19_R2": {
+      "LS1_East": {
+        "batch": "B4",
+        "orientation": "longitudinal",
+        "fibre_folder": "F19_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F19_2.png",
+        "png_url": "/data/png_plots/batch%204%20-%20Logitudinal/01%20Plots/F19_2/Concatenated_Bottom_vs_Top_-_F19_2.png",
+        "scope": "whole_fibre"
+      },
+      "LS2_West": {
+        "batch": "B5",
+        "orientation": "longitudinal",
+        "fibre_folder": "F19_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F19_2.png",
+        "png_url": "/data/png_plots/batch%205%20-%20Logitudinal/01%20Plots/F19_2/Concatenated_Bottom_vs_Top_-_F19_2.png",
+        "scope": "whole_fibre"
+      },
+      "LS3_Middle": {
+        "batch": "B6",
+        "orientation": "longitudinal",
+        "fibre_folder": "F19_2",
+        "png_file": "Concatenated_Bottom_vs_Top_-_F19_2.png",
+        "png_url": "/data/png_plots/batch%206%20-%20Logitudinal/01%20Plots/F19_2/Concatenated_Bottom_vs_Top_-_F19_2.png",
+        "scope": "whole_fibre"
+      }
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "generated_utc": "2026-04-27T06:13:30Z",
+  "panel_extent": {
+    "x": [
+      0.0,
+      16.0
+    ],
+    "y": [
+      0.0,
+      15.0
+    ]
+  },
+  "grid_size": {
+    "nx": 128,
+    "ny": 128
+  },
+  "method": "scipy.interpolate.griddata, method=linear",
+  "skip_routes": [
+    "F12_R2"
+  ],
+  "files": {
+    "LS1_East_BOT_NS": {
+      "file": "LS1_East_BOT_NS.json",
+      "direction": "NS",
+      "direction_desc": "epsilon_yy (N-S strain) from transverse fibres only",
+      "n_input_samples": 26895,
+      "stats": {
+        "min": -348.27995039401407,
+        "max": 50.32730669074868,
+        "p5": -7.238008604639207,
+        "p50": -0.9413976300054532,
+        "p95": 19.325628365244853,
+        "n_valid_cells": 14994,
+        "n_total_cells": 16384
+      }
+    },
+    "LS1_East_BOT_EW": {
+      "file": "LS1_East_BOT_EW.json",
+      "direction": "EW",
+      "direction_desc": "epsilon_xx (E-W strain) from longitudinal fibres only",
+      "n_input_samples": 7181,
+      "stats": {
+        "min": -62.36817897762779,
+        "max": 28.803299507943667,
+        "p5": -15.321135588545062,
+        "p50": -5.015645544306903,
+        "p95": 18.46497329354536,
+        "n_valid_cells": 15624,
+        "n_total_cells": 16384
+      }
+    },
+    "LS1_East_TOP_NS": {
+      "file": "LS1_East_TOP_NS.json",
+      "direction": "NS",
+      "direction_desc": "epsilon_yy (N-S strain) from transverse fibres only",
+      "n_input_samples": 26715,
+      "stats": {
+        "min": -39.03256331236083,
+        "max": 104.29707440586546,
+        "p5": -26.613765641333302,
+        "p50": -7.41653741658487,
+        "p95": 5.597833227910209,
+        "n_valid_cells": 14994,
+        "n_total_cells": 16384
+      }
+    },
+    "LS1_East_TOP_EW": {
+      "file": "LS1_East_TOP_EW.json",
+      "direction": "EW",
+      "direction_desc": "epsilon_xx (E-W strain) from longitudinal fibres only",
+      "n_input_samples": 7383,
+      "stats": {
+        "min": -38.27274626385988,
+        "max": 9.557314560919504,
+        "p5": -29.47076604976708,
+        "p50": -7.516257422440018,
+        "p95": 0.4713118634717227,
+        "n_valid_cells": 12852,
+        "n_total_cells": 16384
+      }
+    },
+    "LS2_West_BOT_NS": {
+      "file": "LS2_West_BOT_NS.json",
+      "direction": "NS",
+      "direction_desc": "epsilon_yy (N-S strain) from transverse fibres only",
+      "n_input_samples": 26792,
+      "stats": {
+        "min": -403.07057604641534,
+        "max": 51.51955946642403,
+        "p5": -9.627164933676912,
+        "p50": -0.003597907098673671,
+        "p95": 18.025959154703017,
+        "n_valid_cells": 14994,
+        "n_total_cells": 16384
+      }
+    },
+    "LS2_West_BOT_EW": {
+      "file": "LS2_West_BOT_EW.json",
+      "direction": "EW",
+      "direction_desc": "epsilon_xx (E-W strain) from longitudinal fibres only",
+      "n_input_samples": 7180,
+      "stats": {
+        "min": -137.54344946531367,
+        "max": 204.75110611173596,
+        "p5": -14.743791815035838,
+        "p50": -4.156689140817616,
+        "p95": 18.22376921335312,
+        "n_valid_cells": 15624,
+        "n_total_cells": 16384
+      }
+    },
+    "LS2_West_TOP_NS": {
+      "file": "LS2_West_TOP_NS.json",
+      "direction": "NS",
+      "direction_desc": "epsilon_yy (N-S strain) from transverse fibres only",
+      "n_input_samples": 26706,
+      "stats": {
+        "min": -52.76317565567463,
+        "max": 110.5558908312298,
+        "p5": -35.54627924594288,
+        "p50": -10.395083399171646,
+        "p95": 4.691797188786286,
+        "n_valid_cells": 14994,
+        "n_total_cells": 16384
+      }
+    },
+    "LS2_West_TOP_EW": {
+      "file": "LS2_West_TOP_EW.json",
+      "direction": "EW",
+      "direction_desc": "epsilon_xx (E-W strain) from longitudinal fibres only",
+      "n_input_samples": 7336,
+      "stats": {
+        "min": -39.02089381399214,
+        "max": 7.970361204849395,
+        "p5": -27.43917490456852,
+        "p50": -8.35806299112905,
+        "p95": -1.0335403808292476,
+        "n_valid_cells": 12852,
+        "n_total_cells": 16384
+      }
+    },
+    "LS3_Middle_BOT_NS": {
+      "file": "LS3_Middle_BOT_NS.json",
+      "direction": "NS",
+      "direction_desc": "epsilon_yy (N-S strain) from transverse fibres only",
+      "n_input_samples": 26738,
+      "stats": {
+        "min": -149.84691162219704,
+        "max": 52.276322129510106,
+        "p5": -11.812295460989816,
+        "p50": 2.9175407956276898,
+        "p95": 22.568279281608,
+        "n_valid_cells": 14994,
+        "n_total_cells": 16384
+      }
+    },
+    "LS3_Middle_BOT_EW": {
+      "file": "LS3_Middle_BOT_EW.json",
+      "direction": "EW",
+      "direction_desc": "epsilon_xx (E-W strain) from longitudinal fibres only",
+      "n_input_samples": 5090,
+      "stats": {
+        "min": -101.56313127990006,
+        "max": 222.4069366329208,
+        "p5": -24.99759165454644,
+        "p50": -7.118359779795931,
+        "p95": 20.373117132253384,
+        "n_valid_cells": 14238,
+        "n_total_cells": 16384
+      }
+    },
+    "LS3_Middle_TOP_NS": {
+      "file": "LS3_Middle_TOP_NS.json",
+      "direction": "NS",
+      "direction_desc": "epsilon_yy (N-S strain) from transverse fibres only",
+      "n_input_samples": 26685,
+      "stats": {
+        "min": -50.42699680214752,
+        "max": 80.43258508891374,
+        "p5": -31.65160287789512,
+        "p50": -15.380985436031045,
+        "p95": 9.715932978945423,
+        "n_valid_cells": 14994,
+        "n_total_cells": 16384
+      }
+    },
+    "LS3_Middle_TOP_EW": {
+      "file": "LS3_Middle_TOP_EW.json",
+      "direction": "EW",
+      "direction_desc": "epsilon_xx (E-W strain) from longitudinal fibres only",
+      "n_input_samples": 7379,
+      "stats": {
+        "min": -74.20092524405672,
+        "max": 23.16224497496919,
+        "p5": -54.910766503867336,
+        "p50": -18.132041852728957,
+        "p95": 3.4164025720673568,
+        "n_valid_cells": 12852,
+        "n_total_cells": 16384
+      }
+    }
+  }
+}

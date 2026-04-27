@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Interactive digital twin of a Primekss PrimX industrial floor test panel, with the embedded fibre optic sensing network and the water-tank loading campaign."
+    />
+    <title>NOVO Industrial Floor, Digital Twin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="panel">
+        <div class="eyebrow">Interactive digital twin</div>
+        <h1>NOVO industrial floor</h1>
+        <p>
+          A two-bay test panel from a Primekss PrimX steel-fibre-reinforced
+          concrete industrial floor system. The slab was instrumented with
+          distributed fibre optic sensors during construction. Three static
+          load tests were performed at the east, centre, and west of the
+          panel using IBC water tanks to apply a 10 kN/m² uniformly
+          distributed load on the slab surface. Click any fibre line to
+          inspect its strain trace, or toggle the 2D strain heatmap to see
+          how the floor responds under each load.
+        </p>
+        <div class="controls">
+          <button id="resetView" type="button">Reset view</button>
+          <button id="sectionView" type="button">Section view</button>
+          <button id="planView" type="button">Plan view</button>
+          <button id="toggleExplode" type="button">Exploded view</button>
+          <button id="toggleLabels" type="button">Show labels</button>
+          <button id="toggleDFOS" type="button">Hide DFOS (all)</button>
+          <button id="toggleDFOSTransverse" type="button">Hide DFOS transverse</button>
+          <button id="toggleDFOSLongitudinal" type="button">Hide DFOS longitudinal</button>
+          <button id="toggleAKBands" type="button">Hide AK rebar</button>
+          <button id="toggleOverGirderBands" type="button">Hide over-girder rebar</button>
+          <label class="loadSelect">
+            Load stage:
+            <select id="stageSelect">
+              <option value="east" selected>Load Stage 1 (East)</option>
+              <option value="west">Load Stage 2 (West)</option>
+              <option value="middle">Load Stage 3 (Middle)</option>
+              <option value="none">None</option>
+            </select>
+          </label>
+          <button id="toggleTanks" type="button">Hide water tanks</button>
+          <button id="toggleHeatmap" type="button">Show 2D strain heatmap</button>
+          <label class="loadSelect" id="heatmapLayerCtl" style="display:none">
+            Heatmap layer:
+            <select id="heatmapLayer">
+              <option value="BOT" selected>Bottom</option>
+              <option value="TOP">Top</option>
+            </select>
+          </label>
+          <label class="loadSelect" id="heatmapDirCtl" style="display:none">
+            Strain direction:
+            <select id="heatmapDir">
+              <option value="NS" selected>ε_yy (N–S, from transverse)</option>
+              <option value="EW">ε_xx (E–W, from longitudinal)</option>
+            </select>
+          </label>
+          <label class="loadSelect" id="heatmapModeCtl" style="display:none">
+            Heatmap mode:
+            <select id="heatmapMode">
+              <option value="smooth" selected>Smooth (interpolated grid)</option>
+              <option value="streaks">Raw fibre streaks</option>
+            </select>
+          </label>
+          <label class="loadSelect" id="heatmapClampCtl" style="display:none">
+            Clamp ±
+            <input id="heatmapClamp" type="number" min="5" max="200" step="5" value="25" style="width:70px">
+            με
+          </label>
+        </div>
+        <div class="legend">
+          <div><span class="swatch girder"></span> HEA 1000 girder</div>
+          <div><span class="swatch beam"></span> IPE 360 floor beam</div>
+          <div><span class="swatch column"></span> SHS 320 column</div>
+          <div><span class="swatch slab"></span> SHR 51/150 slab / deck</div>
+          <div><span class="swatch section"></span> Nelson shear studs</div>
+          <div><span class="swatch akTop"></span> AK band, top mat (4 Φ12 bars, parallel to minor beam, both bays)</div>
+          <div><span class="swatch akBottom"></span> AK band, bottom mat (45 Φ12 bars, perpendicular to minor beam, Area A only)</div>
+          <div><span class="swatch ogTop"></span> Over-girder, top mat (4 Φ16 bars, parallel to girder)</div>
+          <div><span class="swatch ogBottom"></span> Over-girder, bottom mat (~80 Φ16 bars, perpendicular to girder)</div>
+          <div><span class="swatch loadEast"></span> Load Stage 1 (East), Batches 1 and 4. 1 m east overhang, 10 kN/m² UDL via IBC water tanks</div>
+          <div><span class="swatch loadWest"></span> Load Stage 2 (West), Batches 2 and 5. 1 m west overhang</div>
+          <div><span class="swatch loadMiddle"></span> Load Stage 3 (Middle), Batches 3 and 6. Centred on panel</div>
+          <div style="opacity:.7;font-size:.92em;margin-top:.3em">Use the "Load stage" dropdown to switch between Load Stages 1, 2, 3, or None.</div>
+          <div style="margin-top:.6em;border-top:1px solid rgba(0,0,0,.08);padding-top:.6em"></div>
+          <div><span class="swatch dfosTransverseTop"></span> DFOS, transverse top mat (8 fibres at I2 to I10, run S to N)</div>
+          <div><span class="swatch dfosTransverseBottom"></span> DFOS, transverse bottom mat</div>
+          <div><span class="swatch dfosLongitudinalTop"></span> DFOS, longitudinal top mat (7 fibres run W to E, positions vary per fibre)</div>
+          <div><span class="swatch dfosLongitudinalBottom"></span> DFOS, longitudinal bottom mat</div>
+        </div>
+      </aside>
+
+      <main class="stage">
+        <canvas id="scene"></canvas>
+        <div class="hud">
+          <span>Drag to orbit</span>
+          <span>Scroll to zoom</span>
+          <span>Hold middle-click (or Shift + drag, right-drag, arrow keys) to pan</span>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/src/main_spec.js"></script>
+  </body>
+</html>

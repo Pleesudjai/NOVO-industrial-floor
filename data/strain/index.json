@@ -1,0 +1,1068 @@
+{
+  "generated_utc": "2026-04-27T05:17:24Z",
+  "snapshot_policy": "median_of_last_5_loaded_snapshots (already applied during ODiSI tare/snapshot pipeline)",
+  "cleaning_policy": "iterative gradient + local-median, params from Fiber_Coor_Active4.m \u00a74.2",
+  "axis_convention": {
+    "transverse": "Physical Y position (m), South -> North.  phys_paths from Fiber_Coor_Active4.m \u00a75.3 with pre_trans_dirs ['N','W','S','W','N','Z','S','E','N','E','S']",
+    "longitudinal": "Physical X position (m), West -> East.  phys_paths from Fiber_Coor_Active3_batch4.m segment_paths."
+  },
+  "units_strain": "microstrain",
+  "load_stages": [
+    "LS1_East",
+    "LS2_West",
+    "LS3_Middle"
+  ],
+  "routes": {
+    "F1_R1": {
+      "fibre_id": "F1",
+      "route_number": 1,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": -7.0,
+      "reference_element": "I2",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F1_R2": {
+      "fibre_id": "F1",
+      "route_number": 2,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": -6.05,
+      "reference_element": "I2",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F1_R3": {
+      "fibre_id": "F1",
+      "route_number": 3,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": -5.95,
+      "reference_element": "I2",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F2_R1": {
+      "fibre_id": "F2",
+      "route_number": 1,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": -5.0,
+      "reference_element": "I3",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F2_R2": {
+      "fibre_id": "F2",
+      "route_number": 2,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": -4.05,
+      "reference_element": "I3",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F2_R3": {
+      "fibre_id": "F2",
+      "route_number": 3,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": -3.95,
+      "reference_element": "I3",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F3_R1": {
+      "fibre_id": "F3",
+      "route_number": 1,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": -3.0,
+      "reference_element": "I4",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F3_R2": {
+      "fibre_id": "F3",
+      "route_number": 2,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": -2.05,
+      "reference_element": "I4",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F3_R3": {
+      "fibre_id": "F3",
+      "route_number": 3,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": -1.95,
+      "reference_element": "I4",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F4_R1": {
+      "fibre_id": "F4",
+      "route_number": 1,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": -1.0,
+      "reference_element": "I5",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F4_R2": {
+      "fibre_id": "F4",
+      "route_number": 2,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": -0.05,
+      "reference_element": "I5",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F4_R3": {
+      "fibre_id": "F4",
+      "route_number": 3,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": 0.05,
+      "reference_element": "I5",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F5_R1": {
+      "fibre_id": "F5",
+      "route_number": 1,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": 1.0,
+      "reference_element": "I6",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F5_R2": {
+      "fibre_id": "F5",
+      "route_number": 2,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": 1.95,
+      "reference_element": "I6",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F5_R3": {
+      "fibre_id": "F5",
+      "route_number": 3,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": 2.05,
+      "reference_element": "I6",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F7_R1": {
+      "fibre_id": "F7",
+      "route_number": 1,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": 3.0,
+      "reference_element": "I7",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F7_R2": {
+      "fibre_id": "F7",
+      "route_number": 2,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": 3.95,
+      "reference_element": "I7",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F7_R3": {
+      "fibre_id": "F7",
+      "route_number": 3,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": 4.05,
+      "reference_element": "I7",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F8_R1": {
+      "fibre_id": "F8",
+      "route_number": 1,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": 5.0,
+      "reference_element": "I8",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F8_R2": {
+      "fibre_id": "F8",
+      "route_number": 2,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": 5.95,
+      "reference_element": "I8",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F8_R3": {
+      "fibre_id": "F8",
+      "route_number": 3,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": 6.05,
+      "reference_element": "I8",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F10_R1": {
+      "fibre_id": "F10",
+      "route_number": 1,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": 7.0,
+      "reference_element": "I10",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F10_R2": {
+      "fibre_id": "F10",
+      "route_number": 2,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": 7.95,
+      "reference_element": "I10",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F10_R3": {
+      "fibre_id": "F10",
+      "route_number": 3,
+      "orientation": "transverse",
+      "viewer_axis": "X",
+      "viewer_position_m": 8.05,
+      "reference_element": "I10",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F11_R1": {
+      "fibre_id": "F11",
+      "route_number": 1,
+      "orientation": "longitudinal",
+      "viewer_axis": "Z",
+      "viewer_position_m": -10.5,
+      "reference_element": "south_girder",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F11_R2": {
+      "fibre_id": "F11",
+      "route_number": 2,
+      "orientation": "longitudinal",
+      "viewer_axis": "Z",
+      "viewer_position_m": -9.0,
+      "reference_element": "south_girder",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F13_R1": {
+      "fibre_id": "F13",
+      "route_number": 1,
+      "orientation": "longitudinal",
+      "viewer_axis": "Z",
+      "viewer_position_m": -15.15,
+      "reference_element": "south_girder",
+      "status": "partial",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT"
+          ]
+        }
+      }
+    },
+    "F13_R2": {
+      "fibre_id": "F13",
+      "route_number": 2,
+      "orientation": "longitudinal",
+      "viewer_axis": "Z",
+      "viewer_position_m": -14.85,
+      "reference_element": "south_girder",
+      "status": "partial",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT"
+          ]
+        }
+      }
+    },
+    "F14_R1": {
+      "fibre_id": "F14",
+      "route_number": 1,
+      "orientation": "longitudinal",
+      "viewer_axis": "Z",
+      "viewer_position_m": -7.65,
+      "reference_element": "central_girder",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F14_R2": {
+      "fibre_id": "F14",
+      "route_number": 2,
+      "orientation": "longitudinal",
+      "viewer_axis": "Z",
+      "viewer_position_m": -7.35,
+      "reference_element": "central_girder",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F16_R1": {
+      "fibre_id": "F16",
+      "route_number": 1,
+      "orientation": "longitudinal",
+      "viewer_axis": "Z",
+      "viewer_position_m": -6.0,
+      "reference_element": "central_girder",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F16_R2": {
+      "fibre_id": "F16",
+      "route_number": 2,
+      "orientation": "longitudinal",
+      "viewer_axis": "Z",
+      "viewer_position_m": -4.5,
+      "reference_element": "central_girder",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F18_R1": {
+      "fibre_id": "F18",
+      "route_number": 1,
+      "orientation": "longitudinal",
+      "viewer_axis": "Z",
+      "viewer_position_m": -3.0,
+      "reference_element": "central_girder",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F18_R2": {
+      "fibre_id": "F18",
+      "route_number": 2,
+      "orientation": "longitudinal",
+      "viewer_axis": "Z",
+      "viewer_position_m": -1.5,
+      "reference_element": "central_girder",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F19_R1": {
+      "fibre_id": "F19",
+      "route_number": 1,
+      "orientation": "longitudinal",
+      "viewer_axis": "Z",
+      "viewer_position_m": -0.15,
+      "reference_element": "north_girder",
+      "status": "partial",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT"
+          ]
+        }
+      }
+    },
+    "F19_R2": {
+      "fibre_id": "F19",
+      "route_number": 2,
+      "orientation": "longitudinal",
+      "viewer_axis": "Z",
+      "viewer_position_m": 0.15,
+      "reference_element": "north_girder",
+      "status": "partial",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "TOP"
+          ]
+        }
+      }
+    },
+    "F12_R1": {
+      "fibre_id": "F12",
+      "route_number": 1,
+      "orientation": "longitudinal",
+      "viewer_axis": "Z",
+      "viewer_position_m": -13.5,
+      "reference_element": "south_girder",
+      "status": "confirmed",
+      "available": {
+        "LS1_East": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS2_West": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        },
+        "LS3_Middle": {
+          "layers": [
+            "BOT",
+            "TOP"
+          ]
+        }
+      }
+    }
+  }
+}

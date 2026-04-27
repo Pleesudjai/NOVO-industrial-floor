@@ -1,0 +1,542 @@
+:root {
+  color-scheme: light;
+  --bg: #f7f8f9;
+  --bg-soft: #eef2f5;
+  --panel: rgba(255, 255, 255, 0.86);
+  --panel-border: rgba(27, 39, 51, 0.14);
+  --text: #17212b;
+  --muted: rgba(23, 33, 43, 0.68);
+  --beam: #7e8790;
+  --slab: #d9d4ca;
+  --column: #66717b;
+  --section: #c8c2b8;
+  --accent: #53616f;
+  --shadow: 0 24px 80px rgba(31, 45, 61, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffffff 0%, var(--bg) 55%, var(--bg-soft) 100%);
+  color: var(--text);
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(27, 39, 51, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(27, 39, 51, 0.035) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.58), transparent 82%);
+  opacity: 1;
+}
+
+#scene {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.shell {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.panel {
+  position: absolute;
+  z-index: 2;
+  top: 24px;
+  left: 24px;
+  width: min(360px, calc(100vw - 48px));
+  /* Prevent the panel from running off-screen when many toggles are added.
+     Allow it to scroll vertically if the contents exceed viewport height. */
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  padding: 22px 22px 20px;
+  border: 1px solid var(--panel-border);
+  border-radius: 22px;
+  background: var(--panel);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow);
+}
+/* Slim scrollbar for the panel so it doesn't fight the soft glassy look. */
+.panel::-webkit-scrollbar { width: 6px; }
+.panel::-webkit-scrollbar-thumb { background: rgba(27, 39, 51, 0.22); border-radius: 3px; }
+.panel::-webkit-scrollbar-thumb:hover { background: rgba(27, 39, 51, 0.40); }
+.panel::-webkit-scrollbar-track { background: transparent; }
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: var(--accent);
+  font-size: 0.77rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent));
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  line-height: 0.92;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 0.98rem;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+button {
+  appearance: none;
+  border: 1px solid rgba(27, 39, 51, 0.16);
+  border-radius: 14px;
+  padding: 12px 14px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(238, 242, 245, 0.82));
+  color: var(--text);
+  font: 600 0.95rem/1 "IBM Plex Sans", sans-serif;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  border-color: rgba(27, 39, 51, 0.28);
+  background: linear-gradient(180deg, #ffffff, rgba(232, 238, 242, 0.95));
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+#toggleLabels {
+  grid-column: 1 / -1;
+}
+
+#toggleDFOS {
+  grid-column: 1 / -1;
+}
+
+#toggleDFOSTransverse,
+#toggleDFOSLongitudinal {
+  grid-column: 1 / -1;
+}
+
+#toggleAKBands {
+  grid-column: 1 / -1;
+}
+
+#toggleOverGirderBands {
+  grid-column: 1 / -1;
+}
+
+.loadSelect {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.loadSelect select {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(27, 39, 51, 0.18);
+  background: linear-gradient(180deg, #ffffff, rgba(232, 238, 242, 0.95));
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+
+.loadSelect select:hover {
+  border-color: rgba(27, 39, 51, 0.28);
+}
+
+.legend {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.legend div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  box-shadow: 0 0 0 1px rgba(27, 39, 51, 0.16) inset;
+}
+
+.swatch.beam {
+  background: var(--beam);
+}
+
+.swatch.girder {
+  background: #6f7780;
+}
+
+.swatch.slab {
+  background: var(--slab);
+}
+
+.swatch.column {
+  background: var(--column);
+}
+
+.swatch.section {
+  background: var(--section);
+}
+
+.swatch.mesh {
+  background: #b86a55;
+}
+
+.swatch.akTop {
+  background: #d97a4a;
+}
+
+.swatch.akBottom {
+  background: #9a4f30;
+}
+
+.swatch.ogTop {
+  background: #4caf50;
+}
+
+.swatch.ogBottom {
+  background: #1b5e20;
+}
+
+.swatch.loadEast {
+  background: #f2c037;
+}
+
+.swatch.loadMiddle {
+  background: #e87a3a;
+}
+
+.swatch.loadWest {
+  background: #d9485a;
+}
+
+.swatch.dfosTransverseTop {
+  background: #111111;
+}
+
+.swatch.dfosTransverseBottom {
+  background: #000000;
+}
+
+.swatch.dfosLongitudinalTop {
+  background: #111111;
+}
+
+.swatch.dfosLongitudinalBottom {
+  background: #000000;
+}
+
+.note {
+  color: rgba(23, 33, 43, 0.58);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.stage {
+  position: absolute;
+  inset: 0;
+}
+
+.hud {
+  position: absolute;
+  right: 22px;
+  bottom: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  z-index: 2;
+  padding: 10px 12px;
+  border: 1px solid rgba(27, 39, 51, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.74);
+  color: rgba(23, 33, 43, 0.7);
+  backdrop-filter: blur(12px);
+  font-size: 0.79rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ============ DFOS strain popup (Phase 1b) ============ */
+#strainPopup[hidden] { display: none !important; }
+#strainPopup {
+  position: fixed; inset: 0; z-index: 1000;
+  display: flex; align-items: center; justify-content: center;
+}
+#strainPopup .sp-backdrop {
+  position: absolute; inset: 0;
+  background: rgba(11, 16, 22, 0.55);
+  backdrop-filter: blur(6px);
+}
+#strainPopup .sp-modal {
+  position: relative;
+  background: #ffffff;
+  width: min(960px, calc(100vw - 32px));
+  max-height: calc(100vh - 32px);
+  border-radius: 18px;
+  box-shadow: 0 30px 80px rgba(11, 16, 22, 0.32);
+  display: flex; flex-direction: column;
+  overflow: hidden;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--text);
+}
+#strainPopup .sp-header {
+  padding: 18px 22px 12px;
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid rgba(27, 39, 51, 0.10);
+}
+#strainPopup .sp-header h2 { margin: 0; font-size: 1.25rem; letter-spacing: 0.02em; }
+#strainPopup .sp-sub      { margin: 4px 0 0; color: var(--muted); font-size: 0.92rem; }
+#strainPopup .sp-close {
+  border: none; background: transparent; font-size: 1.6rem; line-height: 1;
+  cursor: pointer; padding: 4px 10px; border-radius: 10px; color: var(--accent);
+}
+#strainPopup .sp-close:hover { background: rgba(27, 39, 51, 0.08); }
+#strainPopup .sp-controls {
+  display: flex; flex-wrap: wrap; gap: 14px; align-items: center;
+  padding: 12px 22px; background: var(--bg-soft);
+  border-bottom: 1px solid rgba(27, 39, 51, 0.08);
+  font-size: 0.9rem;
+}
+#strainPopup .sp-controls label {
+  display: inline-flex; align-items: center; gap: 8px;
+}
+#strainPopup .sp-controls select {
+  padding: 5px 8px; border-radius: 8px;
+  border: 1px solid rgba(27, 39, 51, 0.18);
+  background: #fff; font-size: 0.9rem;
+}
+#strainPopup .sp-note {
+  flex: 1 0 100%;
+  margin: 0; color: var(--muted); font-size: 0.78rem; line-height: 1.4;
+}
+#strainPopup .sp-body {
+  padding: 16px 22px 22px;
+  overflow: auto;
+  display: grid; gap: 14px;
+}
+#strainPopup .sp-tile { margin: 0; display: grid; gap: 6px; }
+#strainPopup .sp-tile figcaption {
+  font-size: 0.78rem; color: var(--muted);
+}
+#strainPopup .sp-tile img {
+  width: 100%; height: auto;
+  border: 1px solid rgba(27, 39, 51, 0.10);
+  border-radius: 8px;
+  background: #fafafa;
+}
+#strainPopup .sp-empty {
+  padding: 24px; text-align: center; color: var(--muted);
+}
+#strainPopup .sp-empty pre {
+  display: inline-block;
+  text-align: left;
+  background: var(--bg-soft);
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  margin: 6px auto;
+}
+#strainPopup .sp-checkbox {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.88rem;
+}
+#strainPopup .sp-loading {
+  padding: 32px; text-align: center; color: var(--muted);
+  font-style: italic;
+}
+#strainPopup .sp-plot {
+  border: 1px solid rgba(27, 39, 51, 0.10);
+  border-radius: 8px;
+  background: #fff;
+}
+/* Schematic block sits ABOVE the chart so it never overlaps the Plotly
+ * modebar (zoom / pan / save-as-png), and the user can grab any chart tool. */
+#strainPopup .sp-schematic {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto 12px;
+  background: #ffffff;
+  border: 1px solid rgba(27, 39, 51, 0.14);
+  border-radius: 8px;
+  padding: 6px 8px;
+  box-sizing: border-box;
+}
+#strainPopup .sp-schematic svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 2D strain heatmap colorbar (Phase 3b) — fixed TOP-right of viewport so it
+   doesn't overlap the bottom-right HUD ("drag to orbit / scroll to zoom..."). */
+.sh-colorbar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(27, 39, 51, 0.18);
+  border-radius: 10px;
+  padding: 10px 14px 8px;
+  box-shadow: 0 8px 24px rgba(11, 16, 22, 0.10);
+  font-family: "IBM Plex Sans", sans-serif;
+  width: 280px;
+}
+.sh-cb-bar {
+  height: 14px;
+  border-radius: 4px;
+  background: linear-gradient(to right,
+    rgb(31, 78, 138) 0%,
+    rgb(143, 167, 197) 25%,
+    rgb(255, 255, 255) 50%,
+    rgb(235, 147, 148) 75%,
+    rgb(214, 39, 40) 100%);
+  border: 1px solid rgba(27, 39, 51, 0.14);
+}
+.sh-cb-ticks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  font-size: 0.74rem;
+  color: var(--muted);
+}
+.sh-cb-label {
+  margin-top: 4px;
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-align: center;
+}
+#strainPopup .sp-schematic svg { display: block; width: 100%; height: 100%; }
+#strainPopup .sp-provenance {
+  margin-top: 8px;
+  font-size: 0.72rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+#strainPopup .sp-provenance b { color: var(--text); font-weight: 600; }
+
+@media (max-width: 800px) {
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    left: 8px;
+    right: 8px;
+    top: 8px;
+    width: auto;
+    max-height: 55vh;          /* leave room for canvas + HUD below */
+    padding: 14px 16px 12px;
+  }
+  .panel h1 { font-size: clamp(1.6rem, 7vw, 2.4rem); }
+  .panel p  { font-size: 0.92rem; }
+
+  /* Touch targets: bigger buttons, easier thumb tap. */
+  button, .panel select, .panel input { min-height: 40px; font-size: 0.95rem; }
+
+  .hud {
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 6px 10px;
+  }
+
+  /* Strain popup: full-screen on small phones for legibility. */
+  #strainPopup .sp-modal {
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    border-radius: 0;
+  }
+  #strainPopup .sp-header { padding: 12px 14px 8px; }
+  #strainPopup .sp-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 10px 14px;
+  }
+  #strainPopup .sp-controls label { width: 100%; }
+  #strainPopup .sp-controls select { width: 100%; }
+  #strainPopup .sp-body { padding: 10px 14px 16px; }
+  #strainPopup .sp-plot { height: 380px !important; }
+
+  /* Colorbar: stretch across the bottom of the screen, above the HUD. */
+  .sh-colorbar {
+    top: auto;
+    bottom: 60px;            /* sits above the HUD */
+    left: 8px;
+    right: 8px;
+    width: auto;
+    padding: 8px 12px 6px;
+  }
+  .sh-cb-label { font-size: 0.68rem; }
+}
+
+/* Very narrow phones: shrink the panel further so the canvas dominates. */
+@media (max-width: 480px) {
+  .panel {
+    max-height: 45vh;
+    padding: 12px 14px 10px;
+  }
+  .panel h1 { line-height: 1; margin-bottom: 6px; }
+  .legend { font-size: 0.82rem; }
+}

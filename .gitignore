@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Editor / OS noise
+.DS_Store
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+
+# Runtime / cache
+.vite/
+*.log
+
+# Dev / audit artefacts (screenshots, dev-server logs)
+.audit/
