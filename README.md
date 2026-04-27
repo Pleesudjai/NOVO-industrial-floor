@@ -44,8 +44,8 @@ The compiled site lands in `dist/`. Serve it with any static host.
 |---|---|
 | `src/`         | Three.js viewer, popup, chart, and heatmap modules |
 | `scripts/`    | Python scripts that produce the strain JSON consumed by the viewer |
-| `data/strain/` | Per-route per-layer cleaned strain JSON (~210 files) for the 1D popup |
-| `data/strain_grid/` | 12 interpolated 128 by 128 grids for the 2D heatmap |
+| `public/data/strain/` | Per-route per-layer cleaned strain JSON (~210 files) for the 1D popup |
+| `public/data/strain_grid/` | 12 interpolated 128 by 128 grids for the 2D heatmap |
 | `vite.config.js` | Vite dev server with a small middleware that serves legacy PNG plots from outside this folder during development (no effect on the production build) |
 
 ## Data pipeline
@@ -62,7 +62,7 @@ ODiSI 6000 measurements:
    procedure (5000 microstrain per metre gradient limit, 21-point window,
    25 microstrain local-median tolerance), maps each segment from raw
    fibre arc length to physical position on the slab, and writes one JSON
-   per route per layer per load stage into `data/strain/`.
+   per route per layer per load stage into `public/data/strain/`.
 4. `scripts/build_strain_grids.py` reads those JSON files, builds two
    scattered point clouds per (load stage, layer) (one for epsilon yy from
    transverse fibres, one for epsilon xx from longitudinal fibres), and

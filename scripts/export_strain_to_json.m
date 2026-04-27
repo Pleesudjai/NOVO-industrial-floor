@@ -5,9 +5,9 @@ function export_strain_to_json()
 %   Reads cleaned strain traces from each batch's fiber_data.mat and emits
 %   per-route per-layer JSON files into:
 %
-%     Note_x/data/strain/<LoadStage>/<route_id>_<LAYER>.json
+%     Note_x/public/data/strain/<LoadStage>/<route_id>_<LAYER>.json
 %
-%   plus a master manifest at Note_x/data/strain/index.json.
+%   plus a master manifest at Note_x/public/data/strain/index.json.
 %
 %   Authoritative geometry source: 03 DuckDB/dfos_routes.csv (38 rows).
 %   Authoritative LS<->batch mapping: docs/decisions.md v9 + v10.
@@ -26,7 +26,7 @@ if ~exist(routes_csv, 'file')
 end
 T = readtable(routes_csv, 'Delimiter', ',', 'TextType', 'string');
 
-out_root = fullfile(project_root, 'Note_x', 'data', 'strain');
+out_root = fullfile(project_root, 'Note_x', 'public', 'data', 'strain');
 if ~exist(out_root, 'dir'); mkdir(out_root); end
 
 % --- Batch -> Load Stage mapping (per docs/decisions.md v12, 2026-04-26) ---

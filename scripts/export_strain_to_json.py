@@ -36,7 +36,7 @@ import scipy.io
 
 PROJECT_ROOT = Path.cwd()
 ROUTES_CSV   = PROJECT_ROOT / "03 DuckDB" / "dfos_routes.csv"
-OUT_ROOT     = PROJECT_ROOT / "Note_x" / "data" / "strain"
+OUT_ROOT     = PROJECT_ROOT / "Note_x" / "public" / "data" / "strain"
 
 # v12 (2026-04-26): LS1=East=B1+B4, LS2=West=B2+B5, LS3=Middle=B3+B6
 BATCHES = [

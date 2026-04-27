@@ -34,8 +34,8 @@ import numpy as np
 from scipy.interpolate import griddata
 
 ROOT     = Path.cwd()
-IN_ROOT  = ROOT / "Note_x" / "data" / "strain"
-OUT_ROOT = ROOT / "Note_x" / "data" / "strain_grid"
+IN_ROOT  = ROOT / "Note_x" / "public" / "data" / "strain"
+OUT_ROOT = ROOT / "Note_x" / "public" / "data" / "strain_grid"
 
 LOAD_STAGES = ("LS1_East", "LS2_West", "LS3_Middle")
 LAYERS      = ("BOT", "TOP")

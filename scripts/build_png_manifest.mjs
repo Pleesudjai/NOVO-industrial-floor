@@ -14,7 +14,7 @@ import { promises as fs } from 'node:fs';
 import path from 'node:path';
 
 const PROJECT_ROOT = process.cwd();
-const OUT = path.join(PROJECT_ROOT, 'Note_x', 'data', 'strain', 'png_manifest.json');
+const OUT = path.join(PROJECT_ROOT, 'Note_x', 'public', 'data', 'strain', 'png_manifest.json');
 
 // Batch -> Load Stage (per docs/decisions.md v12, 2026-04-26)
 //   LS1 = East   = B1 (transverse) + B4 (longitudinal)
